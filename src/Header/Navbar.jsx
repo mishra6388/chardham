@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import BookingForm from "./BookingForm"; // Import BookingForm component
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [showForm, setShowForm] = useState(false);
@@ -29,33 +29,33 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-              <li><a href="#">Home</a></li>
+              <li><Link to="/">Home</Link></li>
               <li>
-                <a href="#">Parent</a>
+                <Link to="#">Parent</Link>
                 <ul className="p-2">
-                  <li><a href="#">Submenu 1</a></li>
-                  <li><a href="#">Submenu 2</a></li>
+                  <li><Link to="#">Submenu 1</Link></li>
+                  <li><Link to="#">Submenu 2</Link></li>
                 </ul>
               </li>
-              <li><a href="#">Item 3</a></li>
+              <li><Link to="#">Item 3</Link></li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">Chardham</a>
+          <Link className="btn btn-ghost text-xl">Chardham</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li><a href="#">Home</a></li>
+            <li><Link to="/">Home</Link></li>
             <li>
               <details>
                 <summary>Packages</summary>
                 <ul className="p-2">
-                  <li><a href="#">Economy</a></li>
-                  <li><a href="#">Standard</a></li>
-                  <li><a href="#">Luxury</a></li>
+                  <li><Link to="#">Economy</Link></li>
+                  <li><Link to="#">Standard</Link></li>
+                  <li><Link to="#">Luxury</Link></li>
                 </ul>
               </details>
             </li>
-            <li><a href="#">Contact</a></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
         <div className="navbar-end">
@@ -64,7 +64,7 @@ const Navbar = () => {
       </div>
 
       {/* Show Popup Form when Book Now is clicked */}
-      {showForm && <BookingForm onClose={() => setShowForm(false)} />}
+      {/* {showForm && <BookingForm onClose={() => setShowForm(false)} />} */}
     </>
   );
 };
