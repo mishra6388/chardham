@@ -1,6 +1,6 @@
 import React from 'react';
 import Badrinath from '../components/Badrinath';
-import Kedarnath from '../components/kedarnath';
+import Kedarnath from '../components/Kedarnath';
 import Gangotri from '../components/Gangotri';
 import Yamunotri from '../components/Yamunotri';
 import Aboutchardham from '../components/Aboutchardham';
