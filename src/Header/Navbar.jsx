@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import BookingForm from "../components/BookingForm"; // ✅ Corrected Import Path
 
 const Navbar = () => {
   const [showForm, setShowForm] = useState(false);
@@ -27,21 +28,22 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow"
             >
               <li><Link to="/">Home</Link></li>
               <li>
-                <Link to="#">Parent</Link>
+                <Link to="#">Packages</Link>
                 <ul className="p-2">
-                  <li><Link to="#">Submenu 1</Link></li>
-                  <li><Link to="#">Submenu 2</Link></li>
+                  <li><Link to="#">Economy</Link></li>
+                  <li><Link to="#">Standard</Link></li>
                 </ul>
               </li>
-              <li><Link to="#">Item 3</Link></li>
+              <li><Link to="#">Luxury</Link></li>
             </ul>
           </div>
           <Link className="btn btn-ghost text-xl">Chardham</Link>
         </div>
+
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li><Link to="/">Home</Link></li>
@@ -58,15 +60,16 @@ const Navbar = () => {
             <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
+
         <div className="navbar-end">
           <button className="btn" onClick={() => setShowForm(true)}>Book Now</button>
         </div>
       </div>
 
       {/* Show Popup Form when Book Now is clicked */}
-      {/* {showForm && <BookingForm onClose={() => setShowForm(false)} />} */}
+      {showForm && <BookingForm onClose={() => setShowForm(false)} />}
     </>
   );
 };
 
-export default Navbar; 
+export default Navbar;
