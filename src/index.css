@@ -1,2 +1,13 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+
+
+body {
+    background-color: whitesmoke !important;
+    color: black !important; /* Adjust text color for readability */
+  }
+  
+  .Navbar{
+    background-color: blue;
+  }

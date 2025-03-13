@@ -37,7 +37,7 @@ const Home = () => {
       </div>
 
       {/* Grid for Opening & Closing Dates */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-4 md:px-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-4 md:px-10 mb-10">
         <Kedarnathdate />
         <Badrinathdate />
         <Gangotridate />

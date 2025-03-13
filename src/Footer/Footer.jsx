@@ -3,7 +3,7 @@ const Footer = () =>{
     return(
     
 
-<footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+<footer className="footer sm:footer-horizontal bg-gray-700 text-neutral-content p-10 ">
   <nav>
     <h6 className="footer-title">Packages</h6>
     <a className="link link-hover">Chardham tour</a>

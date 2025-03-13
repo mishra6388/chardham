@@ -7,7 +7,8 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navbar bg-base-100 shadow-sm">
+      <div className="navbar bg-[#FF9300] shadow-sm text-white">
+
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -62,7 +63,7 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end">
-          <button className="btn" onClick={() => setShowForm(true)}>Book Now</button>
+          <button className="bg-[#0000FF] px-2 py-2 rounded" onClick={() => setShowForm(true)}>Book Now</button>
         </div>
       </div>
 
