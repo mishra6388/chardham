@@ -5,6 +5,7 @@ import About from "./Pages/About";
 import Packages from "./Pages/Packages";
 import Contact from "./Pages/Contact";
 import Home from "./Pages/Home";
+import Hotels from "./Pages/Hotels";
 
 
 const router = createBrowserRouter([
@@ -22,13 +23,17 @@ const router = createBrowserRouter([
         element: <About/>
       },
       {
-        path: "",
+        path: "/Packages",
         element: <Packages/>
       },
       {
         path: "/contact",
         element: <Contact/>
-      }
+      },
+      {
+        path: "/hotels",
+        element: <Hotels/>
+      },
       
 
 
